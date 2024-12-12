@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktopNav">
+        <div class="logo">Konstantinos Kamperis</div>
+        <div class="navLinksContainer">
+            <ul class="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburgerNav">
+        <div class="logo">Konstantinos Kamperis</div>
+        <div class="hamburgerMenu">
+            <div class="hamburgerIcon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menuLinks">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_picContainer">
+            <img src="./assets/profilePic.png" alt="Konstantinos Kamperis profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1>Konstantinos Kamperis</h1>
+            <p class="section_text_p2">Junior Developer</p>
+            <div class="btnContainer">
+                <button class="btn btn1" 
+                onclick="window.open('./assets/KamperisKonstantinosCV.pdf')">Download CV</button>
+                <button class="btn btn2" 
+                onclick="location.href='#contact'">Contact Info</button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get to Know More</p>
+        <h1>About me</h1>
+        <div class="sectionContainer">
+            <div class="section_aboutPicContainer">
+                <img src="./assets/AboutPic.png" alt="Konstantinos Kamperis profile picture"
+                class="aboutPic">
+            </div>
+            <div class="section_textContainer">
+                <p>Highly motivated IT Support Specialist with two years of experience in the tech
+                    industry and a solid foundation in Electrical and Computer Engineering. Eager
+                    to leverage problem-solving expertise, technical skills, and a passion for
+                    continuous learning to transition into a Junior Developer role.<br>I have recently
+                     started to get back to my coding journey, by honing my programming
+                    skills and learning new technologies while applying this knowledge to complete 
+                    small projects.
+                </p>
+            </div>    
+        </div>
+        <img src="./assets/downArrow.svg" alt="Down Arrow Icon" class="arrow" 
+        onclick="location.href='#experience'"/>
+    </section>    
+    <section id="experience">
+        <p class="section_text_p1">Explore my</p>
+        <h1>Experience and Education</h1>
+        <div class="experienceSectionContainer">
+            <div class="cards">
+                <div class="card">
+                    <h2>Experience</h2>
+                    <ul class="timeline">
+                    <li>
+                        <span class="date">2022 - Present</span>
+                        <h3>IT Support Specialist</h3>
+                        <span class="location">Boss Info AG | Kavala, Greece </span>
+                        <p>24/7 Network monitoring, daily backups and threat cheks, 
+                            opening and resolving incidents in ERP software, construction and 
+                            using scripts for automation purposes using PowerShell and Python 
+                            and providing general NOC services to maintain system up-time and stability.</p>
+                    </li>
+                    <li>
+                        <span class="date">2020-2023</span>
+                        <h3>Exam Invigilator</h3>
+                        <span class="location">TÜV HELLAS | Eastern Macedonia and Thrace, Greece</span>
+                        <p>Represented TÜV Hellas as an exam invigilator, enhancing communication skills 
+                            by explaining digital exam processes, resolving IT issues, and ensuring professional 
+                            conduct during examinations.</p>
+                    </li>
+                    <li>
+                        <span class="date">2015-2022</span>
+                        <h3>Waiter</h3>
+                        <span class="location">Kipos Cafe | Eleftheroupoli, Mazi Restaurant | Syros</span>
+                        <p>Waited tables during summer seasons, 
+                            excelling in customer service and multitasking in fast-paced environments.</p>
+                    </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Education & Certifications</h2>
+                    <ul class="timeline">
+                    <li>
+                        <span class="date">2014-2022</span>
+                        <h3>M.Eng Electrical and Computer Engineering</h3>
+                        <span class="location">Democritus University of Thrace</span>
+                        <p>Studied programming, data structures, gaining a solid foundation
+                             in tech and engineering principles.</p>
+                        <p>Thesis: "Autonomous energy management for EV charging station
+                            with PV"</p>
+                    </li>
+                    <li>
+                        <span class="date">2011</span>
+                        <h3>Certificate of Proficiency in English</h3>
+                        <span class="location">University of Michigan</span>
+                        <p></p>
+                    </li>
+                    <li>
+                        <span class="date">2010</span>
+                        <h3>Goethe Zertifikat B1</h3>
+                        <span class="location">Goethe-Institut e.V.</span>
+                        <p></p>
+                    </li>
+                    <li>
+                        <span class="date">2009-2011</span>
+                        <h3>Goethe ECDL Certificates</h3>
+                        <span class="location">ECDL Greece</span>
+                        <p>Expert<br>Progress<br>WebStarter<br>ImageMaker</p>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/downArrow.svg" alt="Down Arrow Icon" class="arrow" 
+        onclick="location.href='#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1>Projects</h1>
+        <p class="section_text_p2">These projects are part of my ongoing training and 
+            development journey. While they may not yet be fully implemented, 
+            they will be continuously updated and refined as I enhance my skills and knowledge.
+        </p>
+        <div class="projectsSectionContainer">
+            <div class="cards">
+                <div class="card colorCard">
+                    <div class="imgContainer">
+                        <img src="./assets/etchasketch.png" alt="Etch-a-Sketch Project" class="projectImg">
+                    </div>
+                    <h2 class="projectTitle">Etch-a-Sketch</h2>
+                    <div class="btnContainer">
+                        <button class="btn btn2 projectBtn"
+                        onclick="location.href='https://konskabe.github.io/Etch-a-Sketch/'"
+                        >Live Demo</button>
+                        <button class="btn btn2 projectBtn"
+                        onclick="showErrorMessage()"
+                        >Github</button>
+                    </div>
+                </div>
+                <div class="card colorCard">
+                    <div class="imgContainer">
+                        <img src="./assets/RockPaperScissors.png" alt="Rock Paper Scissors Project" 
+                        class="projectImg">
+                    </div>
+                    <h2 class="projectTitle">Rock-Paper-Scissors</h2>
+                    <div class="btnContainer">
+                        <button class="btn btn2 projectBtn"
+                        onclick="location.href='https://konskabe.github.io/RockPaperScissors/'"
+                        >Live Demo</button>
+                        <button class="btn btn2 projectBtn"
+                        onclick="showErrorMessage()"
+                        >Github</button>
+                    </div>
+                </div>
+                <div class="card colorCard">
+                    <div class="imgContainer">
+                        <img src="./assets/Calculator.png" alt="Calculator Project" 
+                        class="projectImg">
+                    </div>
+                    <h2 class="projectTitle">Calculator</h2>
+                    <div class="btnContainer">
+                        <button class="btn btn2 projectBtn"
+                        onclick="location.href='https://konskabe.github.io/calculator/'"
+                        >Live Demo</button>
+                        <button class="btn btn2 projectBtn"
+                        onclick="showErrorMessage()"
+                        >Github</button>
+                    </div>
+                </div>
+                <div class="card colorCard">
+                    <div class="imgContainer">
+                        <img src="./assets/Library.png" alt="Library Project" 
+                        class="projectImg">
+                    </div>
+                    <h2 class="projectTitle">Library</h2>
+                    <div class="btnContainer">
+                        <button class="btn btn2 projectBtn"
+                        onclick="location.href='https://konskabe.github.io/Library/'"
+                        >Live Demo</button>
+                        <button class="btn btn2 projectBtn"
+                        onclick="showErrorMessage()"
+                        >Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/downArrow.svg" alt="Down Arrow Icon" class="arrow" 
+        onclick="location.href='#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1>Contact Me</h1>
+        <div class="contactContainer">
+            <div class="contactInfoContainer">
+                <img src="./assets/email.png" alt="Email icon" class="icon emailIcon">
+                <p><a href="mailto:kostaskamperis96@gmail.com">kostaskamperis96@gmail.com</a></p>
+            </div>
+            <div class="contactInfoContainer">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon">
+                <p><a href="https://www.linkedin.com/in/konstantinoskamperis96/">LinkedIn</a></p>            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <nav>
+            <div class="navFooterLinksContainer">
+                <ul class="navLinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <img src="./assets/home.svg" alt="Home Icon" class="home" 
+                    onclick="location.href='#desktopNav'"/>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Konstantinos Kamperis.</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

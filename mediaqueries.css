@@ -1,0 +1,121 @@
+@media screen and (max-width: 1600px){
+    section,
+    .sectionContainer{
+        height: fit-content;
+    }
+    section{
+        margin: 0 5%;
+    }
+    #experience,
+    .experienceSectionContainer,
+    .projectsSectionContainer,
+    .sectionContainer{
+        margin-top: 2rem;
+    }
+    #contact{
+        /* height: fit-content; */
+    }
+    .arrow{
+        display: none;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #profile{
+        height: 83vh;
+        margin-bottom: 6rem;   
+    }
+
+    
+    #profile{
+        display: block;
+    }
+    .sectionContainer{
+        flex-direction: column;
+    }
+    .section_picContainer{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    } 
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+    #desktopNav{
+        display: none;
+    }
+
+    #hamburgerNav{
+        display: flex;
+    }    
+    .home{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+        font-size: 1rem;
+    }
+    #contact,
+    footer{
+        height: 40vh;
+    }
+    h2{
+        font-size: 1.25rem;
+    }
+    #profile{
+        margin-bottom: 0;
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .contactContainer{
+        flex-wrap: wrap;
+    }
+    .contactContainer p,
+    .navLinks li a{
+        font-size: 1rem;
+    }
+    .contactInfoContainer{
+        margin: 0;
+    }
+    .navLinks{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .aboutPic{
+        width: 275px;
+        height: auto;
+    }
+    .section_textContainer p{
+        font-size: 1rem;
+        text-align: justify;
+    }
+    .card{
+        padding: 1.5rem 0.5rem;
+    }
+    .section_picContainer{
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .section_text_p2{
+        font-size: 1.25rem;
+    }
+    #profile .section_text_p2{
+        margin-top: 1rem;
+    }
+
+}
