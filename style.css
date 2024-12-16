@@ -343,7 +343,8 @@ h1{
 
   #projects{
     position: relative;
-    height: fit-content;
+    min-height: 96vh;
+    height: auto;
   }
 
   #projects .section_text_p2{
